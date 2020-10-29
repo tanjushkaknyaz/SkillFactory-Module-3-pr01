@@ -1,0 +1,64 @@
+/*.gallery-1, .gallery-3{
+    display: flex;
+    flex-direction:row ;
+    background-color: palegreen;
+}
+.gallery-2{
+    display: flex;
+    flex-direction:row-reverse ;
+    background-color: palegoldenrod;
+}
+*/
+div:nth-of-type(odd){
+    display: flex;
+    flex-direction:row-reverse ;
+    background-color: palegoldenrod;
+}
+div:nth-of-type(even){
+    display: flex;
+    flex-direction:row ;
+    background-color: palegreen;
+}
+img{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+
+img:nth-of-type(odd){
+    height: 300px;
+}
+
+/*div{
+    height: 200;
+    width: 300;
+}
+#one{
+    background-color: darkblue;
+    color: red;
+    position: relative;
+    top: 0px;
+}
+
+#two{
+    background-color: rgb(6, 82, 44);
+    color: yellow;
+    position: absolute;
+    top: -150px;
+    transition-property: top;
+    transition-duration: 2s;
+}
+#three{
+    background-color: rgb(96, 14, 99);
+    color: orange;
+    position: relative;
+    top: 0px;
+}
+
+span{
+    font-size: 30px;
+}
+
+#two:hover{
+    top: 0px;
+}
